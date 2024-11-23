@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MountingExample from "./components/MountingExample";
+import UpdatingExample from "./components/UpdatingExample";
+import UnmountingExample from "./components/UnmountingExample";
+import ControlledFormExample from "./components/ControlledFormExample"; // Import the controlled form component
+import UncontrolledFormExample from "./components/UncontrolledFormExample"; // Import the uncontrolled form component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>Welcome to My React App</h2>
+      <MountingExample message="Red" />
+      {/*<UpdatingExample />
+	  <UnmountingExample />
+	  <ControlledFormExample />
+	  <UncontrolledFormExample />*/}
     </div>
   );
 }
